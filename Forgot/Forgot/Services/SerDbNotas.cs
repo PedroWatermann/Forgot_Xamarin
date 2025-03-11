@@ -101,7 +101,9 @@ namespace Forgot.Services
         {
             try
             {
-                var response = from p in conn.Table<ModNotas>() where p.titulo.ToLower().Contains(titulo.ToLower()) select p; // O select está no fim, pois a expressão deve ser ulgada primeiro
+                var response = from p in conn.Table<ModNotas>() 
+                               where p.titulo.ToLower().Contains(titulo.ToLower()) 
+                               select p; // O select está no fim, pois a expressão deve ser ulgada primeiro
                 /* Equivalente a: 
                     SELECT * 
                     FROM anotacoes
@@ -119,7 +121,9 @@ namespace Forgot.Services
         {
             try
             {
-                var response = from p in conn.Table<ModNotas>() where p.titulo.ToLower().Contains(titulo.ToLower()) && p.favorito == favorito select p; // O select está no fim, pois a expressão deve ser ulgada primeiro
+                var response = from p in conn.Table<ModNotas>() 
+                               where p.titulo.ToLower().Contains(titulo.ToLower()) && p.favorito == favorito 
+                               select p; // O select está no fim, pois a expressão deve ser ulgada primeiro
                 /* Equivalente a: 
                     SELECT * 
                     FROM anotacoes
