@@ -1,12 +1,63 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Forgot.Views.PageCadastrar">
+             x:Class="Forgot.Views.PageCadastrar"
+             Title="Cadastrar / Editar"
+             BackgroundColor="#896FF0">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout 
+            Margin="10">
+            
+            <Entry 
+                x:Name="txtCodigo"
+                IsVisible="False"   
+                IsEnabled="False"/>
+
+            <Entry 
+                x:Name="txtTitulo"
+                Keyboard="Default"
+                Placeholder="Título da anotação"
+                PlaceholderColor="#AAAAAA"/>
+
+            <StackLayout
+                Orientation="Horizontal">
+                <Label
+                    Text="Favorito: "
+                    FontSize="18"
+                    TextColor="White"/>
+                <Switch
+                    x:Name="swtFavorito"
+                    HorizontalOptions="Start"/>
+            </StackLayout>
+
+            <Editor
+                x:Name="txtDados"
+                Keyboard="Default"
+                Placeholder="Dados da anotação"
+                VerticalOptions="FillAndExpand"
+                Margin="20"/>
+
+            <StackLayout
+                Orientation="Horizontal"
+                Margin="20, 0, 20, 20">
+                <Button 
+                    Text="Inserir"
+                    HorizontalOptions="FillAndExpand"
+                    x:Name="btnInserir"
+                    Clicked="btnInserir_Clicked"/>
+                <Button 
+                    Text="Excluir"
+                    HorizontalOptions="FillAndExpand"
+                    x:Name="btnExcluir"
+                    IsVisible="False"
+                    Clicked="btnExcluir_Clicked"/>
+                <Button
+                    Text="Cancelar"
+                    HorizontalOptions="FillAndExpand"
+                    x:Name="btnCancelar"
+                    Clicked="btnCancelar_Clicked"/>
+            </StackLayout>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

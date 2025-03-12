@@ -1,12 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Forgot.Views.PageSobre">
+             x:Class="Forgot.Views.PageSobre"
+             BackgroundColor="#896FF0"
+             Title="Sobre">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout
+            Orientation="Horizontal"
+            Margin="10">
+            
+            <Image 
+                Source="esqueci1.png"
+                Margin="10"/>
+
+            <StackLayout>
+                <Label
+                    Text="Esqueci"
+                    FontSize="30"
+                    FontAttributes="Bold"
+                    VerticalOptions="CenterAndExpand"
+                    TextColor="Black"/>
+
+                <Label
+                    Text="Desenvolvedor: TDS11"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    FontSize="18"
+                    FontAttributes="Bold"
+                    TextColor="Black"/>
+
+                <Label
+                    Text="Maringá - 2025"
+                    FontSize="18"
+                    FontAttributes="Bold"
+                    VerticalOptions="StartAndExpand"
+                    HorizontalOptions="StartAndExpand"
+                    TextColor="Black"/>
+            </StackLayout>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -1,12 +1,87 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Forgot.Views.PageHome">
+             x:Class="Forgot.Views.PageHome"
+             BackgroundColor="#896FF0"
+             Title="Home">
+    
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid 
+            Margin="20">
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Image 
+                Source="esqueci1.png"
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"/>
+
+            <Image 
+                Source="add_icon"
+                Grid.Row="1"
+                Grid.Column="0"
+                x:Name="imgInserir">
+                
+                <Image.GestureRecognizers>
+                    
+                    <TapGestureRecognizer
+                        x:Name="tapImgInserir"
+                        NumberOfTapsRequired="1"
+                        Tapped="tapImgInserir_Tapped"/>
+                    
+                </Image.GestureRecognizers>
+                
+            </Image>
+
+            <Image 
+                Source="search_icon"
+                Grid.Row="1"
+                Grid.Column="1"
+                x:Name="imgLocalizar">
+
+                <Image.GestureRecognizers>
+
+                    <TapGestureRecognizer
+                        x:Name="tapImgLocalizar"
+                        NumberOfTapsRequired="1"
+                        Tapped="tapImgLocalizar_Tapped"/>
+
+                </Image.GestureRecognizers>
+
+            </Image>
+
+            <Label 
+                Text="Cadastrar"
+                TextColor="White"
+                Grid.Row="2"
+                Grid.Column="0"
+                FontSize="25"
+                FontAttributes="Bold"
+                HorizontalOptions="CenterAndExpand"/>
+
+            <Label 
+                Text="Pesquisar"
+                TextColor="White"
+                Grid.Row="2"
+                Grid.Column="1"
+                FontSize="25"
+                FontAttributes="Bold"
+                HorizontalOptions="CenterAndExpand"/>
+
+        </Grid>
+        
     </ContentPage.Content>
+    
 </ContentPage>

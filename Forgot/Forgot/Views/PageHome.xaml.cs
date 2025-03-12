@@ -16,5 +16,19 @@ namespace Forgot.Views
         {
             InitializeComponent();
         }
+
+        private void tapImgInserir_Tapped(object sender, EventArgs e)
+        {
+            MasterDetailPage p = (MasterDetailPage)Application.Current.MainPage;
+            p.Detail = new NavigationPage(new PageCadastrar());
+            p.IsPresented = false;
+        }
+
+        private void tapImgLocalizar_Tapped(object sender, EventArgs e)
+        {
+            MasterDetailPage p = (MasterDetailPage)Application.Current.MainPage;
+            p.Detail = new NavigationPage(new PageListar());
+            p.IsPresented = false;
+        }
     }
 }

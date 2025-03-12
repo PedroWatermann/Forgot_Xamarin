@@ -1,12 +1,110 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Forgot.Views.PagePrincipal">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
-</ContentPage>
+             x:Class="Forgot.Views.PagePrincipal" IsPresented="True"
+             BackgroundColor="#6A3DE8">
+    
+    <MasterDetailPage.Master>
+        
+        <ContentPage 
+            Title="Menu"
+                BackgroundColor="#896FF0">
+            
+            <StackLayout 
+                Margin="10">
+                
+                <Image 
+                    Source="esqueci2.png"
+                    HorizontalOptions="Center"/>
+                <Label
+                    Text="Forgot"
+                    FontAttributes="Bold"
+                    TextColor="White"
+                    FontSize="25"
+                    HorizontalOptions="Center"
+                    Margin="0, 0, 0, 50"/>
+
+                <!-- Adiciona os botões do menu hambúrguer -->
+                <StackLayout 
+                    Orientation="Horizontal">
+                    <Image 
+                        Source="person_icon.png"
+                        HeightRequest="40"/>
+                    <Button 
+                        Text="Home"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        BackgroundColor="White"
+                        HorizontalOptions="FillAndExpand"
+                        CornerRadius="25"
+                        x:Name="btnHome"
+                        Clicked="btnHome_Clicked"/>
+                </StackLayout>
+
+                <StackLayout 
+                    Orientation="Horizontal">
+                    <Image 
+                        Source="add_icon.png"
+                        HeightRequest="40"/>
+                    <Button 
+                        Text="Inserir"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        BackgroundColor="White"
+                        HorizontalOptions="FillAndExpand"
+                        CornerRadius="25"
+                        x:Name="btnInserir"
+                        Clicked="btnInserir_Clicked"/>
+                </StackLayout>
+
+                <StackLayout 
+                    Orientation="Horizontal">
+                    <Image 
+                        Source="search_icon.png"
+                        HeightRequest="40"/>
+                    <Button 
+                        Text="Localizar"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        BackgroundColor="White"
+                        HorizontalOptions="FillAndExpand"
+                        CornerRadius="25"
+                        x:Name="btnLocalizar"
+                        Clicked="btnLocalizar_Clicked"/>
+                </StackLayout>
+
+                <StackLayout 
+                    Orientation="Horizontal">
+                    <Image 
+                        Source="info_icon.png"
+                        HeightRequest="40"/>
+                    <Button 
+                        Text="Sobre"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        BackgroundColor="White"
+                        HorizontalOptions="FillAndExpand"
+                        CornerRadius="25"
+                        x:Name="btnSobre"
+                        Clicked="btnSobre_Clicked"/>
+                </StackLayout>
+
+            </StackLayout>
+            
+        </ContentPage>
+            
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <ContentPage 
+            Title="Principal"
+            BackgroundColor="#6A3DE8">
+            <Label 
+                Text="Olá"
+                TextColor="White"
+                FontSize="50"
+                x:Name="testeDb"/>
+        </ContentPage>
+    </MasterDetailPage.Detail>
+    
+</MasterDetailPage>
