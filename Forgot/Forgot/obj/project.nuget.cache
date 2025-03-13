@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "gEI8tj+y11+dAPBTBhdRcAMC+CFvmy875+nY9PFYtY55WPzJV70VdlfmodwrVTR+h85C+JHmDDUWbJIGWuVDuA==",
+  "dgSpecHash": "SpEdjI7EkRoEtCvIrxbg2QGJqUsSWOqKB+x6Mb56toIrMFh/kxC9ghJrt2xPjQXl7YwpSSgFa03Bch3Z94PJsA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Aluno\\source\\repos\\PedroWatermann\\Forgot_Xamarin\\Forgot\\Forgot\\Forgot.csproj",
   "expectedPackageFiles": [
@@ -15,8 +15,8 @@
     "C:\\Users\\Aluno\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\Aluno\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\Aluno\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
-    "C:\\Users\\Aluno\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
-    "C:\\Users\\Aluno\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+    "C:\\Users\\Aluno\\.nuget\\packages\\xamarin.essentials\\1.8.1\\xamarin.essentials.1.8.1.nupkg.sha512",
+    "C:\\Users\\Aluno\\.nuget\\packages\\xamarin.forms\\5.0.0.2662\\xamarin.forms.5.0.0.2662.nupkg.sha512"
   ],
   "logs": []
 }

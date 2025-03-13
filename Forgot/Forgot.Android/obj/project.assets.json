@@ -1905,8 +1905,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2196",
+          "Xamarin.Essentials": "1.8.1",
+          "Xamarin.Forms": "5.0.0.2662",
           "sqlite-net-pcl": "1.9.172"
         },
         "compile": {
@@ -3738,5 +3738,17 @@
         }
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Downgrade de pacote detectado: Xamarin.Forms de 5.0.0.2662 para 5.0.0.2196. Referencie o pacote diretamente do projeto para selecionar uma versão diferente. \r\n Forgot.Android -> Forgot -> Xamarin.Forms (>= 5.0.0.2662) \r\n Forgot.Android -> Xamarin.Forms (>= 5.0.0.2196)",
+      "libraryId": "Xamarin.Forms",
+      "targetGraphs": [
+        "MonoAndroid,Version=v13.0"
+      ]
+    }
+  ]
 }

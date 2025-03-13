@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "nfuGZ4p5+iBE2Zy9d74aNbGmhKOTIU7WlPNg7/xZX4WWcc3bJW50HY6h9QyGz1Xo0dm9w7Gbzbex6+5cqKwuEw==",
+  "dgSpecHash": "Ot0J6jMx6q4it6970LHNaAeHkEnjyOXpx+B9gguyKwl8wx4CNKBPdj8oka8FgUtUDsLM81Rgc/a6lJ2NgRcwRA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Aluno\\source\\repos\\PedroWatermann\\Forgot_Xamarin\\Forgot\\Forgot.Android\\Forgot.Android.csproj",
   "expectedPackageFiles": [
@@ -71,5 +71,16 @@
     "C:\\Users\\Aluno\\.nuget\\packages\\xamarin.google.android.material\\1.4.0.2\\xamarin.google.android.material.1.4.0.2.nupkg.sha512",
     "C:\\Users\\Aluno\\.nuget\\packages\\xamarin.google.guava.listenablefuture\\1.0.0.2\\xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Downgrade de pacote detectado: Xamarin.Forms de 5.0.0.2662 para 5.0.0.2196. Referencie o pacote diretamente do projeto para selecionar uma versão diferente. \r\n Forgot.Android -> Forgot -> Xamarin.Forms (>= 5.0.0.2662) \r\n Forgot.Android -> Xamarin.Forms (>= 5.0.0.2196)",
+      "libraryId": "Xamarin.Forms",
+      "targetGraphs": [
+        "MonoAndroid,Version=v13.0"
+      ]
+    }
+  ]
 }

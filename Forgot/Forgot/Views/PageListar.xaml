@@ -1,12 +1,51 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Forgot.Views.PageListar">
+             x:Class="Forgot.Views.PageListar"
+             Title="Listagem"
+             BackgroundColor="#896FF0">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            
+            <StackLayout Orientation="Horizontal">
+                <Label
+                    Text="Exibir anotações favoritas:"
+                    FontSize="18"/>
+                <Switch
+                    x:Name="swtFavorito"
+                    HorizontalOptions="Start"
+                    Toggled="swtFavorito_Toggled"/>
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal">
+                <Entry
+                    x:Name="entNota"
+                    Keyboard="Default"
+                    Placeholder="Digite o título da anotação"
+                    PlaceholderColor="#D0D0D0"
+                    HorizontalOptions="StartAndExpand"/>
+                <Button
+                    Text="Localizar"
+                    x:Name="btnLocalizar"
+                    Clicked="btnLocalizar_Clicked"/>
+            </StackLayout>
+            
+            <ListView
+                x:Name="lvwNotas"
+                HasUnevenRows="True"
+                SeparatorColor="Blue"
+                Margin="15"
+                ItemSelected="lvwNotas_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Label 
+                                Text="{Binding titulo, StringFormat='{Título: {0}'}"/>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
